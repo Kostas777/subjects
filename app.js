@@ -204,7 +204,7 @@ const UICtrl = (function () {
             let html = '';
             items.forEach(item => {
                 html += `<li class="collection-item" id="item-${item.id}">
-                <strong>${item.name}: </strong> <em>${item.calories} Calories</em>
+                <strong>${item.name}: </strong> <em>${item.calories} Βαθμός</em>
                 <a href="#" class="secondary-content">
                     <i class="edit-item fa fa-pencil"></i>
                 </a>
@@ -230,7 +230,7 @@ const UICtrl = (function () {
             li.id = `item-${item.id}`;
 
             // Add HTML
-            li.innerHTML = ` <strong>${item.name}: </strong> <em>${item.calories} Calories</em>
+            li.innerHTML = ` <strong>${item.name}: </strong> <em>${item.calories} Βαθμός</em>
             <a href="#" class="secondary-content">
                 <i class="edit-item fa fa-pencil"></i>
             </a>` ;
@@ -250,7 +250,7 @@ const UICtrl = (function () {
 
                 if (itemID === `item-${item.id}`) {
                     document.querySelector(`#${itemID}`).innerHTML =
-                        `<strong>${item.name}: </strong> <em>${item.calories} Calories</em>
+                        `<strong>${item.name}: </strong> <em>${item.calories} Βαθμός</em>
                     <a href="#" class="secondary-content">
                         <i class="edit-item fa fa-pencil"></i>
                     </a>`;
